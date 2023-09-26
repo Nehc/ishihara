@@ -108,7 +108,7 @@ def circle_draw(draw_image, imageN, imageS, circle, saturation=1):
                        fill=fill_color,
                        outline=fill_color)
 
-def ishiraGen(normalImage, secretImage, saturation=1, size=None):
+def Generator(normalImage, secretImage, saturation=1, size=None):
     if os.path.isfile(normalImage): 
         image_n = Image.open(normalImage).convert('RGB')
         if not size: size = image_n.size
